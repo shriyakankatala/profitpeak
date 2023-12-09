@@ -1,0 +1,22 @@
+import React from 'react';
+
+function ImageButton({ imageUrl, onClick }) {
+  const buttonStyle = {
+    width: '150px', // Set the width of the button
+    height: '50px', // Set the height of the button
+    backgroundImage: `url(${imageUrl})`, // Set the background image
+    backgroundSize: 'cover', // Adjust background size to cover the button
+    color: 'white', // Set text color
+    border: 'none', // Remove border
+    cursor: 'pointer', // Add a pointer cursor on hover
+  };
+
+  return (
+    <button style={buttonStyle} onClick={onClick}>
+      {/* You can add text or other content inside the button if desired */}
+      Click me
+    </button>
+  );
+}
+
+export default ImageButton;
